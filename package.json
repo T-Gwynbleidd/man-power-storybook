@@ -1,28 +1,19 @@
 {
-  "name": "manpower-storybook",
+  "name": "manpowergroup-talent-solutions",
   "version": "1.0.0",
-  "description": "Storybook components",
+  "description": "Talent Solutions Storybook components",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c",
     "prepublishOnly": "yarn build"
   },
-  "np": {
-    "publish": false,
-    "tests": false
-  },
-  "keywords": [
-    "storybook",
-    "react",
-    "typescript"
-  ],
-  "license": "MIT",
-  "author": "Unrvld",
+  "license": "-",
+  "author": "UNRVLD",
+  "private": true,
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@rollup/plugin-commonjs": "^17.0.0",
