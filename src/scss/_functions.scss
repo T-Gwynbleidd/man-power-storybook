@@ -1,0 +1,6 @@
+$html-font-size: 16;
+
+/* Use it as  rem(14)*/
+@function rem($pxValue) {
+  @return calc(($pxValue/$html-font-size) * 1rem);
+}

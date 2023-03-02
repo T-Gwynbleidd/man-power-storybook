@@ -1,0 +1,37 @@
+@mixin breakpoint($screen) {
+  @if $screen==xsMobile {
+    @media (max-width: 320px) {
+      @content;
+    }
+  } @else if $screen==mobile {
+    @media (min-width: 360px) {
+      @content;
+    }
+  } @else if $screen==tablet {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $screen==lgTablet {
+    @media (min-width: 905px) {
+      @content;
+    }
+  } @else if $screen==desktop {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else if $screen==lgDesktop {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  } @else if $screen==xlDesktop {
+    @media (min-width: 1920px) {
+      @content;
+    }
+  } @else if type-of($screen) == 'number' {
+    @media (min-width: $screen) {
+      @content;
+    }
+  } @else {
+    @warn 'Custom breakpoint must be number';
+  }
+}

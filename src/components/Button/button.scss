@@ -1,20 +1,16 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+@import "../../scss/typography";
 
-  &--primary{
-    color: white;
-    background-color: #1ea7fd;
+.button {
+  @include buttonMedium-styles;
+
+  &--primary {
+    color: var(--color-on-bg-primary-1);
+    background-color: var(--color-bg-primary);
   }
 
   &--secondary {
-    color: #333;
-    background-color: transparent;
+    color: var(--color-on-bg-secondary-1);
+    background-color: var(--color-bg-secondary);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   }
 

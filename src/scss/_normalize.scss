@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+}
+
+html,
+body,
+fieldset,
+legend,
+h1 {
+  padding: 0;
+  margin: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+}
+
+ul {
+  padding-left: 1rem;
+  margin: 0;
+}

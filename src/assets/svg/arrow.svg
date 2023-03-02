@@ -1,0 +1,9 @@
+<svg width="433" height="293" viewBox="0 0 433 293" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill="url(#background-graqdient-shape)" focusable="false" d="M22.3556 270.375C52.163 300.183 100.49 300.183 130.298 270.375L216.5 184.173L302.702 270.375C332.509 300.183 380.837 300.183 410.644 270.375C440.452 240.568 440.452 192.24 410.644 162.433L270.567 22.3556C255.642 7.43007 236.072 -0.0217735 216.51 7.33216e-05C196.941 -0.0269665 177.364 7.42486 162.433 22.3556L22.3556 162.433C-7.45186 192.24 -7.45186 240.568 22.3556 270.375Z"/>
+	<defs>
+	    <linearGradient id="background-graqdient-shape" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(35)" >
+				<stop offset="40%" stop-color="#00C46F" />
+				<stop offset="100%" stop-color="#1456FF" />
+	</linearGradient>
+</defs>
+</svg>

@@ -38,11 +38,7 @@ const Button = ({
   return (
     <button
       type='button'
-      className={classnames(
-        'storybook-button',
-        `storybook-button--${size}`,
-        `storybook-button--${type}`
-      )}
+      className={classnames('button', `button--${size}`, `button--${type}`)}
       style={textColor ? { color: textColor } : {}}
       onClick={onClick}
     >

@@ -1,0 +1,36 @@
+* {
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-10: 0.625rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-56: 3.5rem;
+  --spacing-64: 4rem;
+  --spacing-80: 5rem;
+  --spacing-104: 6.5rem;
+  --spacing-128: 8rem;
+  --spacing-168: 10.5rem;
+}
+
+* {
+  --shadow-smooth: 0px 2px 2px rgba(12, 23, 54, 0.1),
+    0px 0px 4px rgba(12, 23, 54, 0.1);
+  --shadow-medium: 0px 2px 2px rgba(12, 23, 54, 0.1),
+    0px 4px 10px rgba(12, 23, 54, 0.1);
+  --shadow-high: 0px 0px 4px rgba(0, 4, 23, 0.05),
+    0px 8px 15px 2px rgba(0, 4, 23, 0.1);
+  --border-thickness-none: 0;
+  --border-thickness-thin: 1px;
+  --border-thickness-medium: 2px;
+  --border-radius-square: 0;
+  --border-radius-very-softly-rounded: 2px;
+  --border-radius-softly-rounded: 4px;
+  --border-radius-rounded: 8px;
+  --border-radius-highly-rounded: 16px;
+  --border-radius-very-highly-rounded: 32px;
+  --border-radius-pill: 100px;
+}

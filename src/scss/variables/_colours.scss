@@ -1,0 +1,166 @@
+$pallette: (
+  /* Private pallette of colours should not be used outside of this file */
+  ts-color-orange-100: #b43700,
+  ts-color-orange-75: #c25700,
+  ts-color-orange-50: #e0690f,
+  ts-color-orange-25: #ff7a12,
+  ts-color-red-100: #9d323d,
+  ts-color-red-75: #cc334d,
+  ts-color-red-50: #e4415f,
+  ts-color-red-25: #fc5c7d,
+  ts-color-violet-100: #4f4296,
+  ts-color-violet-75: #5c4bb9,
+  ts-color-violet-50: #736bde,
+  ts-color-violet-25: #9e94fa,
+  ts-color-blue-100: #386097,
+  ts-color-blue-75: #386097,
+  ts-color-blue-50: #3893cd,
+  ts-color-blue-25: #56bded,
+  ts-color-green-100: #5c7d70,
+  ts-color-green-75: #669e66,
+  ts-color-green-50: #70bf5c,
+  ts-color-green-25: #a6eb8c,
+  ts-color-gray-100: #282a32,
+  ts-color-gray-75: #67696f,
+  ts-color-gray-50: #939498,
+  ts-color-gray-25: #efefef,
+  ts-color-black: #000000,
+  ts-color-white: #ffffff
+);
+
+$tokens: (
+  /* CSS Variable names */
+  bg_primary: '--color-bg-primary',
+  on_bg_primary_1: '--color-on-bg-primary-1',
+  on_bg_primary_2: '--color-on-bg-primary-2',
+  container_on_bg_primary: '--color-container-on-bg-primary',
+  on_container_primary_1: '--color-on-container-primary-1',
+  on_container_primary_2: '--color-on-container-primary-2',
+  bg_secondary: '--color-bg-secondary',
+  on_bg_secondary_1: '--color-on-bg-secondary-1',
+  on_bg_secondary_2: '--color-on-bg-secondary-2',
+  container_on_bg_secondary: '--color-container-on-bg-secondary',
+  on_container_secondary_1: '--color-on-container-secondary-1',
+  on_container_secondary_2: '--color-on-container-secondary-2',
+  accent_1_primary: '--color-accent-1-primary',
+  accent_1_shade: '--color-accent-1-shade',
+  accent_1_small: '--color-accent-1-small',
+  on_accent_1_primary: '--color-on-accent-1-primary',
+  on_accent_1_small: '--color-on-accent-1-small',
+  accent_2_primary: '--color-accent-2-primary',
+  accent_2_shade: '--color-accent-2-shade',
+  accent_2_small: '--color-accent-2-small',
+  on_accent_2_primary: '--color-on-accent-2-primary',
+  on_accent_2_small: '--color-on-accent-2-small',
+  accent_3_primary: '--color-accent-3-primary',
+  accent_3_shade: '--color-accent-3-shade',
+  accent_3_small: '--color-accent-3-small',
+  on_accent_3_primary: '--color-on-accent-3-primary',
+  on_accent_3_small: '--color-on-accent-3-small',
+  action_primary: '--color-action-primary',
+  on_action_primary: '--color-on-action-primary',
+  action_outline_primary: '--color-action-outline-primary',
+  on_action_outline_primary: '--color-on-action-outline-primary',
+  disabled_action_primary: '--color-disabled-action-primary',
+  on_disabled_action_primary: '--color-on-disabled-action-primary',
+  action_secondary: '--color-action-secondary',
+  on_action_secondary: '--color-on-action-secondary',
+  action_outline_secondary: '--color-action-outline-secondary',
+  on_action_outline_secondary: '--color-on-action-outline-secondary',
+  disabled_action_secondary: '--color-disabled-action-secondary',
+  on_disabled_action_secondary: '--color-on-disabled-action-secondary',
+  action_small: '--color-action-small',
+  on_action_small: '--color-on-action-small',
+  action_outline_small: '--color-action-outline-small',
+  on_action_outline_small: '--color-on-action-outline-small',
+  error: '--color-error',
+  on_error: '--color-on-error',
+  error_outline: '--color-error-outline',
+  success: '--color-success',
+  on_success: '--color-on-success',
+  success_outline: '--color-success-outline',
+  alert: '--color-alert',
+  on_alert: '--color-on-alert',
+  alert_outline: '--color-alert-outline',
+);
+
+html {
+  // background
+  #{map-get($tokens, bg_primary)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, on_bg_primary_1)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, on_bg_primary_2)}: map-get($pallette, ts-color-gray-75);
+  #{map-get($tokens, container_on_bg_primary)}: map-get(
+    $pallette,
+    ts-color-white
+  );
+  #{map-get($tokens, on_container_primary_1)}: map-get(
+    $pallette,
+    ts-color-black
+  );
+  #{map-get($tokens, on_container_primary_2)}: map-get(
+    $pallette,
+    ts-color-gray-75
+  );
+  #{map-get($tokens, bg_secondary)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, on_bg_secondary_1)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, on_bg_secondary_2)}: map-get($pallette, ts-color-gray-50);
+  #{map-get($tokens, container_on_bg_secondary)}: map-get(
+    $pallette,
+    ts-color-gray-100
+  );
+  #{map-get($tokens, on_container_secondary_1)}: map-get(
+    $pallette,
+    ts-color-white
+  );
+  #{map-get($tokens, on_container_secondary_2)}: map-get(
+    $pallette,
+    ts-color-gray-50
+  );
+  // accent
+  #{map-get($tokens, accent_1_primary)}: map-get($pallette, ts-color-violet-50);
+  #{map-get($tokens, accent_1_shade)}: map-get($pallette, ts-color-violet-100);
+  #{map-get($tokens, accent_1_small)}: map-get($pallette, ts-color-violet-25);
+  #{map-get($tokens, on_accent_1_primary)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, on_accent_1_small)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, accent_2_primary)}: map-get($pallette, ts-color-green-25);
+  #{map-get($tokens, accent_2_shade)}: map-get($pallette, ts-color-green-100);
+  #{map-get($tokens, accent_2_small)}: map-get($pallette, ts-color-green-50);
+  #{map-get($tokens, on_accent_2_primary)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, on_accent_2_small)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, accent_3_primary)}: map-get($pallette, ts-color-blue-25);
+  #{map-get($tokens, accent_3_shade)}: map-get($pallette, ts-color-blue-100); //this
+  #{map-get($tokens, accent_3_small)}: map-get($pallette, ts-color-blue-50); //this
+  #{map-get($tokens, on_accent_3_primary)}: map-get($pallette, ts-color-black); //this
+  #{map-get($tokens, on_accent_3_small)}: map-get($pallette, ts-color-white);
+  // actions
+  #{map-get($tokens, action_primary)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, on_action_primary)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, action_outline_primary)}: map-get($pallette, ts-color-gray-50);
+  #{map-get($tokens, on_action_outline_primary)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, disabled_action_primary)}: map-get($pallette, ts-color-gray-25);
+  #{map-get($tokens, on_disabled_action_primary)}: map-get($pallette, ts-color-gray-50);
+  #{map-get($tokens, action_secondary)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, on_action_secondary)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, action_outline_secondary)}: map-get($pallette, ts-color-gray-75);
+  #{map-get($tokens, on_action_outline_secondary)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, disabled_action_secondary)}: map-get($pallette, ts-color-gray-100);
+  #{map-get($tokens, on_disabled_action_secondary)}: map-get($pallette, ts-color-gray-75);
+  #{map-get($tokens, action_small)}: map-get($pallette, ts-color-gray-25);
+  #{map-get($tokens, on_action_small)}: map-get($pallette, ts-color-black);
+  #{map-get($tokens, action_outline_small)}: map-get($pallette, ts-color-gray-100);
+  #{map-get($tokens, on_action_outline_small)}: map-get($pallette, ts-color-white);
+  // alert
+  #{map-get($tokens, error)}: map-get($pallette, ts-color-red-50);
+  #{map-get($tokens, on_error)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, error_outline)}: map-get($pallette, ts-color-red-25);
+  #{map-get($tokens, success)}: map-get($pallette, ts-color-green-50);
+  #{map-get($tokens, on_success)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, success_outline)}: map-get($pallette, ts-color-green-25);
+  #{map-get($tokens, alert)}: map-get($pallette, ts-color-orange-50);
+  #{map-get($tokens, on_alert)}: map-get($pallette, ts-color-white);
+  #{map-get($tokens, alert_outline)}: map-get($pallette, ts-color-orange-25);
+}
+
+::selection {
+  background: map-get($pallette, green);
+}
